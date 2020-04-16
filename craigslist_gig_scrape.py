@@ -3,11 +3,11 @@ import dateutil.parser
 
 # TODO Allow passing a command line arguement that defines a CSV of search keywords
 SearchStringList = [
-    # "arcgis",
+    "arcgis",
     "python",
-    # "linux"
-    # "programmer",
-    # "devops"
+    "linux"
+    "programmer",
+    "devops"
     ]
 
 
@@ -46,7 +46,7 @@ cutoff_date = dateutil.parser.parse("2020-03-01 00:00:00Z")
 
 for SearchString in SearchStringList:
     for CityName in Cities:
-        url = "http://"+CityName+".craigslist.org/search/jjj?format=rss&query="+SearchString
+        url = "http://"+CityName+".craigslist.org/search/ggg?format=rss&query="+SearchString
         feed = parse(url)
         for post in feed.entries:
             post['filtered'] = False
