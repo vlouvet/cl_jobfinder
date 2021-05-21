@@ -1,4 +1,6 @@
 # cl_jobfinder
+Update: This project will be archived now that Craigslist no longer offers RSS support
+
 scrapes CraigsList RSS feed to look for employment
 
 
